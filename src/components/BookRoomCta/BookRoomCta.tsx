@@ -99,6 +99,7 @@ const BookRoomCta: FC<Props> = (props) => {
             onChange={(date) => setCheckoutDate(date)}
             dateFormat="dd/MM/yyyy"
             disabled={!checkinDate}
+            // @ts-ignore
             minDate={calcMinCheckoutDate()}
             id="check-out-date"
             className="w-full border text-black border-gray-300 rounded-lg p-2.5 focus:ring-primary focus:border-primary"
